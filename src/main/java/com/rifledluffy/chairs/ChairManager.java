@@ -1,17 +1,17 @@
 package com.rifledluffy.chairs;
 
+import com.rifledluffy.chairs.events.ChairLeaveEvent;
+import com.rifledluffy.chairs.messages.MessageEvent;
+import com.rifledluffy.chairs.utility.Util;
 import com.rifledluffy.chairs.chairs.BlockFilter;
 import com.rifledluffy.chairs.chairs.Chair;
 import com.rifledluffy.chairs.config.ConfigManager;
 import com.rifledluffy.chairs.events.ChairCheckEvent;
-import com.rifledluffy.chairs.events.ChairLeaveEvent;
 import com.rifledluffy.chairs.events.ChairReplaceEvent;
 import com.rifledluffy.chairs.events.ChairSitEvent;
 import com.rifledluffy.chairs.events.ChairTossEvent;
 import com.rifledluffy.chairs.messages.MessageConstruct;
-import com.rifledluffy.chairs.messages.MessageEvent;
 import com.rifledluffy.chairs.messages.MessageType;
-import com.rifledluffy.chairs.utility.Util;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
@@ -36,7 +36,6 @@ import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerGameModeChangeEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerMoveEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.inventory.EquipmentSlot;
@@ -45,7 +44,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 import org.bukkit.projectiles.ProjectileSource;
-import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 import org.spigotmc.event.entity.EntityDismountEvent;
 

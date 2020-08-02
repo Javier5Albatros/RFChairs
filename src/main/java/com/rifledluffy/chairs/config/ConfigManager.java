@@ -3,13 +3,12 @@ package com.rifledluffy.chairs.config;
 import java.io.File;
 import java.io.IOException;
 
+import com.rifledluffy.chairs.RFChairs;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import com.rifledluffy.chairs.RFChairs;
 
 public class ConfigManager {
 

@@ -1,15 +1,14 @@
 package com.rifledluffy.chairs.command.commands;
 
+import com.rifledluffy.chairs.RFChairs;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
-import com.rifledluffy.chairs.RFChairs;
-
 public class InfoCommand extends SubCommand {
 	
     private RFChairs plugin = RFChairs.getInstance();
-    
+
     @Override
 	public void onCommand(CommandSender sender, String[] args) {
 		if (sender instanceof Player) {
@@ -21,7 +20,7 @@ public class InfoCommand extends SubCommand {
     
     @Override
 	public void onCommand(ConsoleCommandSender sender, String[] args) {
-      sender.sendMessage("§cOnly players can use commands for this plugin.");
+      sender.sendMessage("Â§cOnly players can use commands for this plugin.");
 	}
 
     @Override

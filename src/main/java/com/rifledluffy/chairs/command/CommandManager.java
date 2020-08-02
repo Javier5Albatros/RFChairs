@@ -4,18 +4,18 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 
+import com.rifledluffy.chairs.command.commands.ResetCommand;
+import com.rifledluffy.chairs.command.commands.SubCommand;
+import com.rifledluffy.chairs.command.commands.ToggleCommand;
+import com.rifledluffy.chairs.command.commands.HelpCommand;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
 import com.rifledluffy.chairs.RFChairs;
-import com.rifledluffy.chairs.command.commands.HelpCommand;
 import com.rifledluffy.chairs.command.commands.InfoCommand;
 import com.rifledluffy.chairs.command.commands.MuteCommand;
 import com.rifledluffy.chairs.command.commands.ReloadCommand;
-import com.rifledluffy.chairs.command.commands.ResetCommand;
-import com.rifledluffy.chairs.command.commands.SubCommand;
-import com.rifledluffy.chairs.command.commands.ToggleCommand;
 
 import net.md_5.bungee.api.ChatColor;
 

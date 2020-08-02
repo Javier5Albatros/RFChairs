@@ -13,7 +13,6 @@ import org.bukkit.potion.PotionEffectType;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import com.rifledluffy.chairs.RFChairs;
-import com.rifledluffy.chairs.utility.Util;
 
 public class Chair {
 	

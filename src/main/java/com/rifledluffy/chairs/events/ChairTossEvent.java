@@ -1,11 +1,11 @@
 package com.rifledluffy.chairs.events;
 
+import com.rifledluffy.chairs.TargetInfo;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 
-import com.rifledluffy.chairs.TargetInfo;
 import com.rifledluffy.chairs.chairs.Chair;
 
 public class ChairTossEvent extends Event {

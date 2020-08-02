@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
+import com.rifledluffy.chairs.messages.MessageEvent;
+import com.rifledluffy.chairs.utility.Util;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -12,10 +14,8 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 import com.rifledluffy.chairs.config.ConfigManager;
 import com.rifledluffy.chairs.messages.MessageConstruct;
-import com.rifledluffy.chairs.messages.MessageEvent;
 import com.rifledluffy.chairs.messages.MessageType;
 import com.rifledluffy.chairs.messages.Messages;
-import com.rifledluffy.chairs.utility.Util;
 
 public class MessageManager implements Listener {
 	
