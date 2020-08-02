@@ -39,7 +39,7 @@ public class WorldGuardManager {
 	    try {
 	        registry.register(flag);
 	        plugin.log("Custom Flag Registered!");
-	    } catch (FlagConflictException e) {
+	    } catch (FlagConflictException | IllegalStateException e) {
 	    	plugin.log("Unable to register custom worldguard flag!");
 	    }
 	}
