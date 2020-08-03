@@ -55,8 +55,8 @@ regen-potency: 0
 allow-custom-messages: false
 priority-on-if-has-perm: true
 allowed-chairs:
-  - STAIRS*
-  - SLAB*
-  - CARPET*
+  - ALL_STAIRS
+  - ALL_SLAB
+  - ALL_CARPET
 blacklisted-chairs: []
 disabled-worlds: []
