@@ -1,6 +1,5 @@
 package com.rifledluffy.chairs.command.commands;
 
-import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
@@ -8,18 +7,9 @@ import com.rifledluffy.chairs.RFChairs;
 
 import net.md_5.bungee.api.ChatColor;
 
-public class HelpCommand extends SubCommand {
+public class HelpCommand implements SubCommand {
 	
 	private RFChairs plugin = RFChairs.getInstance();
-	
-	@Override
-	public void onCommand(CommandSender sender, String[] args) {
-		if (sender instanceof Player) {
-			onCommand((Player) sender, args);
-		} else if (sender instanceof ConsoleCommandSender) {
-			onCommand((ConsoleCommandSender) sender, args);
-		} else return;
-	}
     
     @Override
 	public void onCommand(ConsoleCommandSender sender, String[] args) {
@@ -48,15 +38,5 @@ public class HelpCommand extends SubCommand {
     @Override
     public String name() {
         return plugin.commandManager.help;
-    }
-
-    @Override
-    public String info() {
-        return null;
-    }
-
-    @Override
-    public String[] aliases() {
-        return new String[0];
     }
 }

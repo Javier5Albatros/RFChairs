@@ -4,23 +4,31 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.entity.Player;
 
-public abstract class SubCommand {
+public interface SubCommand {
 
     /*
     /<command> <subcommand> args[0] args[1]
      */
-
-    public SubCommand() {}
     
-    public abstract void onCommand(CommandSender sender, String[] args);
+    default void onCommand(CommandSender sender, String[] args) {
+        if (sender instanceof Player) {
+            onCommand((Player) sender, args);
+        } else if (sender instanceof ConsoleCommandSender) {
+            onCommand((ConsoleCommandSender) sender, args);
+        } else return;
+    }
     
-    public abstract void onCommand(ConsoleCommandSender sender, String[] args);
+    void onCommand(ConsoleCommandSender sender, String[] args);
 
-    public abstract void onCommand(Player player, String[] args);
+    void onCommand(Player player, String[] args);
 
-    public abstract String name();
+    String name();
 
-    public abstract String info();
+    default String info() {
+        return "";
+    }
 
-    public abstract String[] aliases();
+    default String[] aliases() {
+        return new String[0];
+    }
 }
